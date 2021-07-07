@@ -1,14 +1,28 @@
 <html>
+
 <head>
- <title>Example</title>
+ <title>Entidades</title>
  <link rel="stylesheet" href="style.css">
  <script src="code.js"></script>
 </head>
+
 <body>
-<h1>Entidades Grupo 4 - MTI 2021</h1>
-<button type="button" onclick="fillEntities()">ver entidades</button>
-<ul id="entities" />
-<h1>Agregar Anotaciones</h1>
+<h1>Grupo 4 - MTI 2021</h1>
+<h2>MTI-476 Sistemas y Aplicaciones Web</h2>
+<h3>Luis Romero - luis.romerov@sansano.usm.cl</h3>
+<h3>Juan Paulo Isasmendi - juan.isasmendi@sansano.usm.cl</h3>
+<h3>Andrés Orozco - andres.orozco@sansano.usm.cl</h3>
+
+<table>
+    <tr> 
+      <td>
+        <button type="button" onclick="fillEntities()">ver entidades</button>
+          <ul id="entities" />
+        </td>
+    </tr>
+    <tr> 
+        <td>
+<h2>Agregar Anotaciones</h2>
 <form action="http://localhost:3000/api/anotaciones" method="POST">
         <div class="form-group">
             <label for="Entidad">Entidad</label>
@@ -18,10 +32,15 @@
         <div class="form-group">
             <label for="Title">Anotacion</label>
             <input class="form-control" name="anotacionin">
-        </div>
-
-        <!--Other fields-->
+        </div>        
         <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
+
+
+</td>
+</tr>
+</table>
+
 </body>
+
 </html>
