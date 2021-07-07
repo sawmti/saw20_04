@@ -8,4 +8,20 @@
 <h1>Entidades Grupo 4 - MTI 2021</h1>
 <button type="button" onclick="fillEntities()">ver entidades</button>
 <ul id="entities" />
+<h1>Agregar Anotaciones</h1>
+<form action="http://localhost:3000/api/anotaciones" method="POST">
+        <div class="form-group">
+            <label for="Entidad">Entidad</label>
+            <input class="form-control" name="entidadin">
+        </div>
+
+        <div class="form-group">
+            <label for="Title">Anotacion</label>
+            <input class="form-control" name="anotacionin">
+        </div>
+
+        <!--Other fields-->
+        <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+</body>
 </html>
