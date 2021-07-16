@@ -1,0 +1,87 @@
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+/*  background-color: #00539F;*/
+  background-color: #26798E;
+}
+
+body {
+/*  width: 600px; */
+  width: 90%;
+  margin: 0 auto;
+/*  background-color: #FF9500;
+  background-color: #63CAA7;*/
+  background-color: #63CAA7;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+/*
+FFC172
+FFE3B3
+
+
+#Listar {background-color: red;}
+#Crear {background-color: green;}
+#Editar {background-color: blue;}
+#Borrar {background-color: orange;}
+*/
+
+#Listar {background-color: #26798E;}
+#Crear {background-color: #26798E;}
+#Editar {background-color: #26798E;}
+#Borrar {background-color: #26798E;}
+
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #00539F;
+  text-shadow: 3px 3px 1px white;
+}
+
+h2 {
+  font-size: 25px;
+  color:black;
+}
+
+h3 {
+  font-size: 12px;
+}

@@ -1,46 +1,58 @@
+<!DOCTYPE html>
 <html>
-
 <head>
- <title>Entidades</title>
- <link rel="stylesheet" href="style.css">
- <script src="code.js"></script>
+  <title>Entidades</title>
+  <link rel="stylesheet" href="style3.css">
+  <script src="menu.js"></script>
+  <script src="code.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
-<h1>Grupo 4 - MTI 2021</h1>
-<h2>MTI-476 Sistemas y Aplicaciones Web</h2>
-<h3>Luis Romero - luis.romerov@sansano.usm.cl</h3>
-<h3>Juan Paulo Isasmendi - juan.isasmendi@sansano.usm.cl</h3>
-<h3>Andrés Orozco - andres.orozco@sansano.usm.cl</h3>
+  <h1>MTI-476 Sistemas y Aplicaciones Web</h1>
+  <h2>Grupo 4</h2>
+  <ul>
+    <li type="circle"><h3>Luis Romero - luis.romerov@sansano.usm.cl</h3></li> 
+    <li type="circle"><h3>Juan Paulo Isasmendi - juan.isasmendi@sansano.usm.cl</h3></li>
+    <li type="circle"><h3>Andrés Orozco - andres.orozco@sansano.usm.cl</h3></li>
+</ul>
+<button class="tablink" onclick="openPage('Listar', this, '#26798E')" id="defaultOpen">Listar</button>
+<button class="tablink" onclick="openPage('Crear', this, '#26798E')" >Crear</button>
+<button class="tablink" onclick="openPage('Editar', this, '#26798E')">Editar</button>
+<button class="tablink" onclick="openPage('Borrar', this, '#26798E')">Borrar</button>
 
+<div id="Listar" class="tabcontent">
+  <script >fillEntities()</script>
+  <h3>Entidades</h3>
+  <p>En construccion...</p>
 <table>
     <tr> 
-      <td>
-        <button type="button" onclick="fillEntities()">ver entidades</button>
-          <ul id="entities" />
-        </td>
-    </tr>
-    <tr> 
-        <td>
-<h2>Agregar Anotaciones</h2>
-<form action="http://localhost:3000/api/anotaciones" method="POST">
-        <div class="form-group">
-            <label for="Entidad">Entidad</label>
-            <input class="form-control" name="entidadin">
-        </div>
+          <td id="ul_dinamico" />
+    </tr> 
+  </table>
+</div>
 
-        <div class="form-group">
-            <label for="Title">Anotacion</label>
-            <input class="form-control" name="anotacionin">
-        </div>        
-        <button type="submit" class="btn btn-primary">Enviar</button>
-</form>
+<div id="Crear" class="tabcontent">
+  <h3>Crear</h3>
+  <p>En construccion...</p>
+  
+  <form action="ejemplo.php" method="get">
+    <p>ID Entidad: <input type="text" name="nombre" size="40" placeholder="Escriba aqui el ID de la nueva Entidad"></p>
+    <p>Notaciones: <input type="text" name="nombre" size="40" placeholder="Escriba aqui sus Anotaciones"></p>
+    <p>
+      <input type="submit" value="Enviar">
+    </p>
+  </form>
 
+</div>
 
-</td>
-</tr>
-</table>
+<div id="Editar" class="tabcontent">
+  <h3>Editar</h3>
+  <p>En construccion...</p>
+</div>
 
+<div id="Borrar" class="tabcontent">
+  <h3>Borrar</h3>
+  <p>En construccion...</p>
+</div>   
 </body>
-
-</html>
+</html> 
