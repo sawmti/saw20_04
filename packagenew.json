@@ -1,0 +1,26 @@
+{
+  "name": "saw20_04",
+  "version": "1.0.0",
+  "description": "[![Continuous integration for SAW template](https://github.com/sawmti/saw20_04/actions/workflows/ci.yml/badge.svg)](https://github.com/sawmti/saw20_04/actions/workflows/ci.yml)",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sawmti/saw20_04.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sawmti/saw20_04/issues"
+  },
+  "homepage": "https://github.com/sawmti/saw20_04#readme"
+}
