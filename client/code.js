@@ -1,14 +1,15 @@
 async function getEntities() {
-    const response = await fetch('/api/entities');
+    const response = await fetch('/api/entidades');
  //   const response = await fetch('/api/entidades_jp');
     const data = await response.json();
+    console.log(data);
     return data
 }
 
 function fillEntities() {
     getEntities().then(data => {
-        console.log(data.entities);
         const ulEntities = document.getElementById("ul_dinamico");
+        console.log(ulEntities);
 
         data.entitiesQ.forEach(entity => {        
 //        data.id.forEach(entity => {        
@@ -19,3 +20,7 @@ function fillEntities() {
         })
     })
 }
+
+
+
+

@@ -1,58 +1,171 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Entidades</title>
-  <link rel="stylesheet" href="style3.css">
-  <script src="menu.js"></script>
-  <script src="code.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+<title>MTI2020-SAW2004</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="style.css">
+<script src="menu.js"></script>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="luis.js" type="text/javascript"></script>
+
+
+<?xml version="1.0"?>
+
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:cd="https://saw2004webapp.herokuapp.com/">
+
+<rdf:Description
+rdf:about="https://saw2004webapp.herokuapp.com/">
+  <cd:artist>Juan Paulo Isasmendi</cd:artist>
+  <cd:country>CHILE</cd:country>
+  <cd:company>SAW2004</cd:company>
+  <cd:year>2021</cd:year>
+</rdf:Description>
+
+</rdf:RDF>
 </head>
 <body>
-  <h1>MTI-476 Sistemas y Aplicaciones Web</h1>
-  <h2>Grupo 4</h2>
-  <ul>
-    <li type="circle"><h3>Luis Romero - luis.romerov@sansano.usm.cl</h3></li> 
-    <li type="circle"><h3>Juan Paulo Isasmendi - juan.isasmendi@sansano.usm.cl</h3></li>
-    <li type="circle"><h3>Andrés Orozco - andres.orozco@sansano.usm.cl</h3></li>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">INICIO</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">WIKIDATA</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">PROYECTO</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">NOSOTROS</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">MTI-476 Sistemas y Aplicaciones Web</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">CAPITALES<br>DEL MUNDO</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Universidad Técnica Federico Santa María</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">WIKIDATA</span></h5>
+    <iframe style="width: 100%; height: 500px; border: none;" 
+    src="https://query.wikidata.org/embed.html#%23defaultView%3AImageGrid%20%5Cn%5C%0ASELECT%20distinct%20%3FpaisLabel%20%3FciudadLabel%20%3Fciudad%20%3Fpic%20%0AWHERE%20%7B%20%0A%20%20%20%20%3Fpais%20wdt%3AP31%20wd%3AQ3624078%20.%0A%20%20%20%20%3Fciudad%20wdt%3AP31%20wd%3AQ5119%20.%0A%20%20%20%20%3Fpais%20wdt%3AP36%20%3Fciudad%20.%0A%20%20%20%20%3Fciudad%20wdt%3AP18%20%3Fpic%20.%0A%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0AORDER%20BY%20%3FpaisLabel%0A"
+    referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+</div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PROYECTO</span></h5>
+    <iframe style="width: 100%; height: 500px; border: none;" 
+src="demos.html"
+referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+<!--
+    <p>Creación de una aplicación Web que gestione anotaciones sobre algunas entidades de un determinado dominio.</p>
+<ul>
+    La aplicación Web tendrá un interfaz que mostrará una lista de entidades de un determinado dominio y permitirá crear anotaciones sobre dichas entidades. 
+    <li>Las entidades tendrán una URI asociada en Wikidata</li>
+    <li>Las anotaciones podrán almacenarse en memoria, en una base de datos tradicional o en una instancia de Wikibase</li> 
+    <li>La aplicación permitirá buscar entidades y mostrar las anotaciones creadas sobre dichas entidades además de otras anotaciones que estén disponibles en Wikidata</li> 
+    
+    La aplicación estará formada por 2 componentes:
+    <li>Servicio web REST</li>
+    <dl>
+        <dd>Permitirá gestionar entidades</dd>    
+        <dd>Permitirá gestionar anotaciones sobre las entidades</dd>    
+    </dl>
+    <li>Cliente Web</li>
+    <dl>
+        <dd>Aplicación Web que ofrecerá un interfaz de usuario en HTML y permitirá buscar/visualizar entidades y crear anotaciones sobre las mismas
+        </dd>    
+    </dl>        
+        
+    Requisitos
+    <li>Se gestionarán entidades que tendrán una URI en Wikidata y una URI propia en la aplicación Web</li>
+    <li>Las anotaciones consistirán en una propiedad y un valor para dicha propiedad</li>
+    <li>Negociación de contenido: Al acceder a la URI de una entidad en la aplicación Web se ofrecerá distintos tipos de información en función del agente. Al menos se distinguirá entre navegadores a los que se ofrecerá HTML y bots, a los que se ofrecerá RDF</li>
+    <li>Microdatos: La información ofrecida de una entidad en HTML deberá incluir microdatos</li>
+    <li>API REST: Será posible crear, modificar y borrar anotaciones de una entidad</li>
+
+    Forma de entrega:
+    <li>La aplicación Web estará desplegada y operativa en Heroku</li>
+    <li>El código fuente estará disponible en la plataforma github</li>
 </ul>
-<button class="tablink" onclick="openPage('Listar', this, '#26798E')" id="defaultOpen">Listar</button>
-<button class="tablink" onclick="openPage('Crear', this, '#26798E')" >Crear</button>
-<button class="tablink" onclick="openPage('Editar', this, '#26798E')">Editar</button>
-<button class="tablink" onclick="openPage('Borrar', this, '#26798E')">Borrar</button>
-
-<div id="Listar" class="tabcontent">
-  <script >fillEntities()</script>
-  <h3>Entidades</h3>
-  <p>En construccion...</p>
-<table>
-    <tr> 
-          <td id="ul_dinamico" />
-    </tr> 
-  </table>
+-->
+  </div>
 </div>
 
-<div id="Crear" class="tabcontent">
-  <h3>Crear</h3>
-  <p>En construccion...</p>
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">NOSOTROS</span></h5>
   
-  <form action="ejemplo.php" method="get">
-    <p>ID Entidad: <input type="text" name="nombre" size="40" placeholder="Escriba aqui el ID de la nueva Entidad"></p>
-    <p>Notaciones: <input type="text" name="nombre" size="40" placeholder="Escriba aqui sus Anotaciones"></p>
-    <p>
-      <input type="submit" value="Enviar">
-    </p>
-  </form>
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">SAW 2004</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">MTI2020</div>
+      </a>
+    </div>
 
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Luis Romero</h5>
+      <p class="w3-text-grey">luis.romerov@sansano.usm.cl</p><br>
+    
+      <h5>Juan Paulo Isasmendi</h5>
+      <p class="w3-text-grey">juan.isasmendi@sansano.usm.cl</p><br>
+    
+      <h5>Andrés Orozco </h5>
+      <p class="w3-text-grey">andres.orozco@sansano.usm.cl</p><br>
+    
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+        <h5>MTI-476 Sistemas y Aplicaciones Web</h5>
+        <p class="w3-text-grey">
+            La asignatura realizará un repaso de la evolución de la Web, así como del estado actual y de las principales
+            tendencias en el campo de las aplicaciones Web. Se describirán las principales tecnologías del lado del cliente
+            y del servidor, así como los lenguajes y estándares de la Web. Se abordan las tecnologías relacionadas con
+            XML, los servicios Web, la computación en la nube y la Web Semántica
+        </p><br>
+    </div>  
+  </div>
 </div>
 
-<div id="Editar" class="tabcontent">
-  <h3>Editar</h3>
-  <p>En construccion...</p>
+
+<!-- End page content -->
 </div>
 
-<div id="Borrar" class="tabcontent">
-  <h3>Borrar</h3>
-  <p>En construccion...</p>
-</div>   
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
 </body>
-</html> 
+</html>
+
+

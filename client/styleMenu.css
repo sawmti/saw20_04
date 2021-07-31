@@ -11,20 +11,23 @@ body, html {
 html {
   font-size: 10px;
   font-family: 'Open Sans', sans-serif;
-/*  background-color: #00539F;*/
-  background-color: #26798E;
+/*  background-color: #00539F;
+  background-color: #26798E;*/
 }
 
-body {
-/*  width: 600px; */
-  width: 90%;
+exbody {
+/*  width: 600px; 
+  width: 100%;
+  height: max-content;
   margin: 0 auto;
 /*  background-color: #FF9500;
-  background-color: #63CAA7;*/
   background-color: #63CAA7;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
+  background-color: #63CAA7;*/
+  padding: 0 10px 90% 10px;
+  border: 2px solid black;
 }
+
+
 
 /* Style tab links */
 .tablink {
@@ -61,12 +64,12 @@ FFE3B3
 #Editar {background-color: blue;}
 #Borrar {background-color: orange;}
 */
-
+/*
 #Listar {background-color: #26798E;}
 #Crear {background-color: #26798E;}
 #Editar {background-color: #26798E;}
 #Borrar {background-color: #26798E;}
-
+*/
 
 h1 {
   font-size: 30px;
@@ -85,3 +88,57 @@ h2 {
 h3 {
   font-size: 12px;
 }
+
+
+t { 
+  font-size: 1.3em;
+  font-family: Bangers;
+}
+b {
+  color: #F00;
+  font-family: Allura;
+  font-size: 1.3em;
+}
+div > div {
+  box-shadow: 0 0 0 15px #555;
+  border: 1px solid #333;
+  color: #333;
+  margin: 1em;
+  padding: 1em;
+}
+
+
+table {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+td {
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid red;
+  border-collapse: collapse;
+  padding: 0.3em;
+  caption-side: bottom;
+}
+
+/*
+th, td {
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 0.3em;
+  caption-side: bottom;
+}
+caption {
+  padding: 0.3em;
+  color: #fff;
+   background: #000;
+}
+th {
+  background: rgb(238, 238, 238);
+}
+*/

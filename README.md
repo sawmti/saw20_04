@@ -2,6 +2,8 @@
 
 # Project structure - Group 20_04
 
+CAPITALES DEL MUNDO - WIKIDATA
+
 This repository contains a simple skeleton of a web page which contains a REST service implemented in Node and a simple Web client that invokes the service. 
 
 - [client](https://github.com/sawmti/saw20_0/tree/main/client) contains the source code of the web client (html/css/javascript files)
@@ -38,9 +40,9 @@ docker-compose up
 ## Contributors
 
 - [Jose Emilio Labra Gayo](http://labra.weso.es)
-- Luis Romero
-- Andres Orozco
-- Juan Paulo Isasmendi
+- Luis Romero - luis.romerov@sansano.usm.cl
+- Andres Orozco - andres.orozco@sansano.usm.cl
+- Juan Paulo Isasmendi - juan.isasmendi@sansano.usm.cl
 
 ## Credits
 
